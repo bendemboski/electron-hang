@@ -1,0 +1,14 @@
+{
+  "name": "electron-hang",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "for i in {1..5}; do electron-mocha tests/hang-test.js; done"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "electron": "^1.6.7",
+    "electron-mocha": "^3.4.0"
+  }
+}
