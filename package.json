@@ -2,13 +2,11 @@
   "name": "electron-hang",
   "version": "1.0.0",
   "scripts": {
-    "test": "for i in {1..5}; do electron-mocha tests/hang-test.js; done"
+    "launch": "xvfb-run --server-args=\"-screen 0 1024x768x24\" electron ."
   },
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
-    "chai": "^3.5.0",
-    "electron": "^1.6.7",
-    "electron-mocha": "^3.4.0"
+  "devDependencies": {
+    "electron": "^1.6.7"
   }
 }
